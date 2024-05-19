@@ -3,7 +3,7 @@
 ## Overview
 This project forms part of [The Odin Project](https://www.theodinproject.com/) Foundations Course. Following a brief introduction to the basics of JavaScript, you are tasked to create a simple game of "rock, paper, scissors" that can be played inside a browser console. This is my attempt to complete this project.
 
-The purpose of this project is twofold. The first is to provide you with an opportunity to practice writing and using JavaScript. The second, arguably more important purpose, is to practice taking an algorithmic approach to problem solving (as outlined in the "Problem Solving" lesson in the course). 
+The purpose of this project is twofold. The first is to provide you with an opportunity to practise writing and using JavaScript. The second, arguably more important purpose, is to practise taking an algorithmic approach to problem-solving (as outlined in the "Problem-Solving" lesson in the course). 
 
 Note that when developing this game, the focus was on ensuring it was operational within the Google Chrome browser. It may still function correctly in other browsers, however, there is no guarantee that it will.
 

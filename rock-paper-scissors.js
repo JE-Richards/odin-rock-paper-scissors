@@ -1,0 +1,16 @@
+// Generate a pop-up box that asks the user to select one of three options;
+// User makes a selection;
+// Compute rock, paper, scissor choice for the computer;
+// If user choice is rock then do;
+    // If computer choice is rock then ouptput "Tie Game";
+    // Else if computer choice is scissors then output "You Win!";
+    // Else output "You Lose";
+// Else if user choice is scissors then do;
+    // If computer choice is rock then output "You Lose";
+    // Else if computer choice is scissors then output "Tie Game";
+    // Else output "You Win!";
+// Else do;
+    // If computer choice is rock then output "You Win!";
+    // Else if computer choice is scissors then output "You Lose";
+    // Else output "Tie Game";
+// Print the output to the console;
