@@ -67,12 +67,12 @@ Decomposing the big problem into smaller, easier to solve problems is a great wa
 ## Applying the Approach to the Project
 
 ### Project Problem
-> Create the game Rock Paper Scissors. The game will be played entirely in the console.
+> Create the game Rock Paper Scissors. The game will be played entirely in the console. The winner is decided via best of five rounds.
 
 ### Understanding the Problem
 Based on the information provided, and the context of the course the project resides in, I'd reformulate the problem as:
 
-Using JavaScript, build a game of Rock Paper Scissors that can be played using a browser console. The game will be played against the computer/code.
+Using JavaScript, build a game of Rock Paper Scissors that can be played using a browser console. The game will be played against the computer/code. The game will last for 5 rounds and the winner will be the player who has won the most rounds.
 
 ### Planning
 - Does the game need a user interface?
@@ -83,37 +83,57 @@ Using JavaScript, build a game of Rock Paper Scissors that can be played using a
 - What's the desired output?
     * A message declaring whether the user has won or lost depending on the choice they made when compared to the choice generated for the computer.
 - What steps need to be taken? (Think of this as the algorithm that will need to be implemented in code)
-    1. The user is prompted to pick one of three options.
-    2. The user makes a selection.
-    3. A selection is made randomly by the program for the computer.
-    4. Compare the users input against the computers choice.
-    5. Decide whether the user has won or lost based on the rules of rock, paper, scissors.
+    1. Initialise the game
+    2. Set the computers score to 0.
+    3. Set the users score to 0.
+    4. The user is prompted to pick either rock, paper, or scissors.
+    5. The user makes a selection.
+    6. A selection is made randomly by the program for the computer.
+    7. Compare the users input against the computers choice.
+    8. Decide whether the user has won or lost the round based on the rules of rock, paper, scissors.
         * Rock beats scissors
         * Paper beats rock
         * Scissors beats paper
         * It's a draw if both players choose the same option
-    6. Output the result to the console.
+    9. Output the result to the console.
+    10. Incrament the winners score by 1.
+    11. Repeat steps 4-10 until 5 rounds have been played.
+    12. Output the overall winner to the console.
 
 ### Pseudocode
 Here I'll turn the algorithm created above into Pseudocode. The pseudocode will be included in the [JavaScript file](./rock-paper-scissors.js) as comments.
 
 ```
-// Generate a pop-up box that asks the user to select one of three options;
-// User makes a selection;
-// Compute rock, paper, scissor choice for the computer;
-// If user choice is rock then do;
-    // If computer choice is rock then ouptput "Tie Game";
-    // Else if computer choice is scissors then output "You Win!";
-    // Else output "You Lose";
-// Else if user choice is scissors then do;
-    // If computer choice is rock then output "You Lose";
-    // Else if computer choice is scissors then output "Tie Game";
-    // Else output "You Win!";
-// Else do;
-    // If computer choice is rock then output "You Win!";
-    // Else if computer choice is scissors then output "You Lose";
-    // Else output "Tie Game";
-// Print the output to the console;
+// Initiate the game;
+    // Set player score to 0;
+    // Set computer score to 0;
+    // Set round counter to 1;
+    // While round counter is less than or equal to 5, play game;
+        // Prompt user cto choose rock, paper, or scissors;
+        // Compute rock, paper, scissors choice for the computer;
+        // Compare user choice to computer choice;
+            // If user choice is rock then do;
+                // If computer choice is rock then ouptput "Tie Game";
+                // Else if computer choice is scissors then output "You Win!";
+                // Else output "You Lose";
+            // Else if user choice is scissors then do;
+                // If computer choice is rock then output "You Lose";
+                // Else if computer choice is scissors then output "Tie Game";
+                // Else output "You Win!";
+            // Else do;
+                // If computer choice is rock then output "You Win!";
+                // Else if computer choice is scissors then output "You Lose";
+                // Else output "Tie Game";
+        // Print the output to the console;
+        // Incrementally increase winners score;
+            // If winner result is "You Win!" incrament score by 1;
+            // Else no score change;
+        // Print players scores to console;
+        // Increment round counter by 1;
+        // If round counter less than or equal to 5, print round counter;
+        // If round counter is equal to 6 compare player scores
+            // Print overall winner to console
+// End while loop
 ```
 
 ### Divide and Conquer
