@@ -4,24 +4,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Play Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
-        <h1>Rock, Paper, Scissors Game</h1>
-        <p>
-            This game is designed to function inside of the Google Chrome browser console. It may also function in other browsers, but it is not guaranteed.
-        </p>
+        <div id="header">
+            <h1>Rock, Paper, Scissors Game</h1>
+        </div>
+        <div id="fixed">
+            <div id="information">
+                <p>
+                    This game is designed to function inside of the Google Chrome browser console. It may also function in other browsers, but it is not guaranteed.
+                </p>
+                <p>
+                    To play start the game, please make your first selection by using one of the buttons below. The game will end when either you or the computer wins 5 rounds. Good luck.
+                </p>
+            
+                <div id="gameButtons">
+                    <button id="btnRock">Rock</button>
+                    <button id="btnPaper">Paper</button>
+                    <button id="btnScissors">Scissors</button>
+                </div>
+            </div>
 
-        <div id="gameButtons">
-            <button id="btnRock">Rock</button>
-            <button id="btnPaper">Paper</button>
-            <button id="btnScissors">Scissors</button>
+            <div id="results">
+
+            </div>
         </div>
 
-        <div id="results">
-
-        </div>
-
-        <script src="./temp-two.js"></script>
+        <script src="./rock-paper-scissors.js"></script>
     </body>
 </html>
